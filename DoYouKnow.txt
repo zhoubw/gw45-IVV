@@ -1,0 +1,21 @@
+Set 7
+1. There are five methods implemented in Critter : getActors, processActors, 
+getMoveLocations, selectMoveLocations, and makeMove
+2. There are five actions that every critter does, all corresponding to the 
+previous methods. Firstly, it gets a list of actors to process, then processes 
+the actors, then generates a set of locations to which they may move, selects 
+a move location, and then moves to that location
+3.They should not override the getActors method, as the method would have the
+exact same use in every single possible critter class, it would only need to be
+changed if the environment was changed.
+4.One way is the critter could "eat" the actors. Another way is it could simply
+move the actors. A third way is that the critter could change the properties of
+the actors, color etc.
+5.The three methods needed ot make a critter move are: getMoveLocations(), which
+returns all possible movements an actor could make. The second method, selectMove-
+Locations() selects one of the suitable locations from getMoveLocations. The third
+method, makeMove, processes the move and makes it happen.
+6.There is no Critter constructor because it inherits the construcotr from Actor
+because the class extends Actor. Any instance of critter will just call the super() method and call the constructor of Actor
+
+Set 8
