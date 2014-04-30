@@ -76,4 +76,10 @@ A new type of Critter has appeared on the scene:
 -If target is anything else, i.e. Actor or Flower, kill it and take its place.
 
 "KnightCritter" Critter test cases:
--
+-Test the movements, see if the knight can go to a specific place by printing out
+the possible movements the knight can go to.
+-Test the no movement by blocking the knight in
+-Test the not killing a rock by trying to move a knight to a rock
+-Test the not killing a KnightCritter with the same color by trying to move to
+a Knight with the same color
+-Test the killing by moving to another Actor.
