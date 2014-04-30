@@ -64,3 +64,9 @@ randomly 90 degrees. A critter does not turn when it cannot move.
 turn instead of moving.
 7.It inherits the processActors from Critter, which forbids Critters from eating
 other Critters.
+
+A new type of Critter has appeared on the scene:
+_______Critter Specs:
+<Description of what this subclass of Critter can do, and how it does it. Adhere as closely as possible to prior examples shown in the GridWorld packet.>
+_______Critter Test Cases:
+<Precise descriptions of expected behavior on specific triggers (eg, method inputs). Adhere as closely as possible to prior examples shown in the GridWorld packet.>
