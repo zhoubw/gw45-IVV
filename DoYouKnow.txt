@@ -33,3 +33,26 @@ it drops a flower. If and only if it didnt make a move then no flower is dropped
 5.The actor class contains the getLocation method.
 6.A Critter can access its own grid by calling the inherited method getGrid(), 
 which is contained in actor.
+
+Set 9
+1.It doesnt override it because there is no need, it proccesses the actors in
+the same way.
+2.It calls the getActors and then looks for neighbors in specific locations. If
+the neighbor is in specified location, it will be eaten, if not, it will not 
+be disturbed.
+3.The parameter brings in array of directions. This is usefull because it gives 
+the crab a list of possible neighbors it can eat. The method uses this array to 
+determine and return valid adjacent loations of this critter in the directions
+given by the array parameter.
+4.
+-(4,3)
+-(4,4)
+-(4,5)
+5.They both do not turn in the direction they are moving when moving, and also 
+randomly choose their next locations.
+CrabCritter cna only move left or right, and if it cannot move then it will turn 
+randomly 90 degrees. A critter does not turn when it cannot move.
+6.If the location in makeMove is the same as the current location, it will
+turn instead of moving.
+7.It inherits the processActors from Critter, which forbids Critters from eating
+other Critters.
