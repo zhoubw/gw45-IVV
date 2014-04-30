@@ -15,3 +15,9 @@ loc to an arraylist of locations and returns the arraylist, regardless of what
 get returned.
 5.It would only check for four different locations around the location instead
 of 8, disregarding upright, upleft, downright, and downleft.
+
+11:
+
+1. The precondition in the constructor states that rows and cols must be greater than zero, ensuring at least one spot.
+2. The number of columns is determined by finding the length of one row, assuming ? there is one row. ?
+3. The 
