@@ -1,3 +1,10 @@
+<name>
+git@github.com:Merkuri/gw45-IVV.git
+APCS PD 8
+HW #34 -- Gridworld, part 4
+2014-04-29
+
+Do You Know?
 Set 7
 1. There are five methods implemented in Critter : getActors, processActors, 
 getMoveLocations, selectMoveLocations, and makeMove
@@ -18,6 +25,7 @@ method, makeMove, processes the move and makes it happen.
 6.There is no Critter constructor because it inherits the construcotr from Actor
 because the class extends Actor. Any instance of critter will just call the super() method and call the constructor of Actor
 
+Do You Know?
 Set 8
 1. Act would only cause the ChameleonCritter to act the same way if none of the 
 methods in critter had been overridden. Since ChameleonCritter overrides process-
