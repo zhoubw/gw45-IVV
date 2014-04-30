@@ -1,0 +1,17 @@
+Do You Know?
+
+Set 10
+1. Interface Grid<E> implements. Both BoundedGrid and UnboundedGrid implement
+the isValid method.
+2.In Abstract Class AbstractGrid the method getValidAdjacentLocations uses
+the method isValid. Other methods call getValidAdjacentLocations which
+indirectly calls the isValid method.
+3. get is called, getOccupiedAdjacentLocations is called. The latter also calls
+isValid. The get method is in both the UnboundedGrid class and BoundedGrid 
+class.
+4.The method works by testing if the location of neighborLoc is null. No matter 
+what type get returns, the method only cares if it is null. Then it adds the 
+loc to an arraylist of locations and returns the arraylist, regardless of what
+get returned.
+5.It would only check for four different locations around the location instead
+of 8, disregarding upright, upleft, downright, and downleft.
