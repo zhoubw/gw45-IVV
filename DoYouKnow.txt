@@ -66,7 +66,14 @@ turn instead of moving.
 other Critters.
 
 A new type of Critter has appeared on the scene:
-_______Critter Specs:
-<Description of what this subclass of Critter can do, and how it does it. Adhere as closely as possible to prior examples shown in the GridWorld packet.>
-_______Critter Test Cases:
-<Precise descriptions of expected behavior on specific triggers (eg, method inputs). Adhere as closely as possible to prior examples shown in the GridWorld packet.>
+"KnightCritter" Critter specs:
+-Teleporting Jump: Knight critter moves in an L path, 2 up and 1 over.
+-Color Guard: KnightCritter is born with a random color.
+-The Critter has up to 8 ways of moving.
+-If target space doesn't exist, stop.
+-If target has a rock, stop.
+-If target is a KnightCritter with the same color as yourself, stop.
+-If target is anything else, i.e. Actor or Flower, kill it and take its place.
+
+"KnightCritter" Critter test cases:
+-
