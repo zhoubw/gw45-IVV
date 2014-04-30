@@ -19,3 +19,17 @@ method, makeMove, processes the move and makes it happen.
 because the class extends Actor. Any instance of critter will just call the super() method and call the constructor of Actor
 
 Set 8
+1. Act would only cause the ChameleonCritter to act the same way if none of the 
+methods in critter had been overridden. Since ChameleonCritter overrides process-
+Actors and makeMove, act will have a different effect because it calls all the 
+methods, and if the methods are different, act will be different as well.
+2.The only difference between the move functions of a ChameleonCritter and a 
+regular Critter is that the makeMove of a ChameleonCritter will change its
+direction to the thing it changed color to. Then it will move identically. Instead
+of rewriting code, one can just call super.makeMove.
+3.You would modify the makeMove function. Every time the ChameleonCritter moves,
+it drops a flower. If and only if it didnt make a move then no flower is dropped.
+4.Because it doesnt need to. It gets the actors from the same place.
+5.The actor class contains the getLocation method.
+6.A Critter can access its own grid by calling the inherited method getGrid(), 
+which is contained in actor.
