@@ -16,8 +16,20 @@ get returned.
 5.It would only check for four different locations around the location instead
 of 8, disregarding upright, upleft, downright, and downleft.
 
-11:
+Set 11
 
 1. The precondition in the constructor states that rows and cols must be greater than zero, ensuring at least one spot.
 2. The number of columns is determined by finding the length of one row, assuming ? there is one row. ?
-3. The  
+3. It has to be >=0 and < number of rows in BoundedGrid. Likewise for columns, 
+instead just measuring columns.
+4. getOccupiedLoactions returns an ArrayList<Location>. The time complexity is 
+O(r*c)
+5. get Method returns an object of type E. It needs a parameter Location. 
+O(1)
+6.It could cause an exception to be thrown if there is no such valid location,
+or if the object sent to put is null. its O(1)
+7.Remove returns a generic type E, depends on what is stored in the BoundedGrid
+object. If trying to remove from an empty location, null is just returned. There
+is no error, contrary to common sense. O(1)
+8.Yes, because get put and remove are O(1), and getOccupiedLocations is as fast
+as it could realistically be. 
