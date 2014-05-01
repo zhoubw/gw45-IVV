@@ -1,0 +1,8 @@
+1.Go into GridWorldCode/projects
+2.Open/Write a folder
+3.If writing code, go into your folder, write needed code and add needed files
+4.To compile : use this, FROM YOUR FOLDER WHERE YOUR WORK IS
+javac -classpath .:\path\to/gridworld.jar *.java
+to run it use
+java -classpath .:\path\to/gridworld.jav CLASS-THAT-CONTAINS-MAIN
+tada
