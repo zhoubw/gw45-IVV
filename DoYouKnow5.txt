@@ -20,4 +20,4 @@ of 8, disregarding upright, upleft, downright, and downleft.
 
 1. The precondition in the constructor states that rows and cols must be greater than zero, ensuring at least one spot.
 2. The number of columns is determined by finding the length of one row, assuming ? there is one row. ?
-3. The 
+3. The  
