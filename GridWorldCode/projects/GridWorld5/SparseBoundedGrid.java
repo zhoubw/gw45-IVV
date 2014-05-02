@@ -1,5 +1,8 @@
 //SparseBoundedGrid: 
-
+// get(): O(1).
+// put(): O(1) if dimensions are within the actual size.
+// put(): O(dimensions^2) if otherwise, because the dimensions need to be traversed
+// to make new ones.
 import info.gridworld.grid.*;
 import java.util.ArrayList;
 
