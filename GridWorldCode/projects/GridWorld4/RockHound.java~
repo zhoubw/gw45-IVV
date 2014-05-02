@@ -1,0 +1,15 @@
+
+import info.gridworld.actor.Actor;
+import info.gridworld.actor.Rock;
+import info.gridworld.actor.Critter;
+import info.gridworld.grid.Location;
+import java.util.ArrayList;
+
+public class RockHound extends Critter {
+
+    public void ProcessActors(ArrayList<Actor> Actors){
+	for (Actor a : Actors){
+	    if (a instanceof Rock)
+		a.removeSelfFromGrid();
+	}}}
+	
